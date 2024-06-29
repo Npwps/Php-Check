@@ -1,0 +1,18 @@
+<?php
+function checkPHP($url) {
+    headers=getheaders(headers = get_headers(url);
+    foreach (headersasheaders as header) {
+        if (stripos($header, 'X-Powered-By: PHP') !== false) {
+            return true;
+        }
+    }
+    return false;
+}
+
+$url = 'https://www.example.com'; // Ganti dengan URL yang ingin Anda periksa
+if (checkPHP($url)) {
+    echo "Website menggunakan PHP.";
+} else {
+    echo "Website tidak menggunakan PHP atau tidak dapat dideteksi.";
+}
+?>
